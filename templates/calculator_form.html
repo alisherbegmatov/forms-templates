@@ -4,12 +4,18 @@
         <title>Calculator</title>
     </head>
     <body>
-        <!-- Your HTML code goes here! -->
-
-
-
-
-
-        
+        <!-- Shows the user a form to enter 2 numbers and an operation. -->
+        <form action="/calculator_results" method="GET">
+            <p>Please enter 2 numbers and select an operator.</p>
+            <input type="number" name="operand1">
+            <select name="operation">
+                <option value="add">+</option>
+                <option value="subtract">-</option>
+                <option value="multiply">*</option>
+                <option value="divide">/</option>
+            </select>
+            <input type="number" name="operand2">
+            <input type="submit" value="Submit!">
+        </form>
     </body>
 </html>
